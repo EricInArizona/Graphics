@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.domainnotsetyet.graphics">
+
+
+    <!-- Needs OpenGL ES 3.1.
+      Devices that don't have this won't see
+      this app in Google Play.
+    <uses-feature android:glEsVersion="0x00030001" android:required="true" />
+-->
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+
+
+<!--
+  <uses-permission
+   android:name="android.permission.INTERNET">
+  </uses-permission>
+-->
+
+  <application
+    android:allowBackup="false"
+    android:icon="@mipmap/ic_launcher"
+    android:label="Eric Graphics"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true">
+
+<!--
+If I make an Application class.
+    android:name="MainApp">
+-->
+
+
+    <activity
+      android:name="MainActivity"
+      android:label="Eric Graphics">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+
+  </application>
+</manifest>
+
